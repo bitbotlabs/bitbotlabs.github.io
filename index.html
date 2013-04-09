@@ -10,10 +10,24 @@
     <meta name="google-site-verification" content="hiM56YpWcjmTX8vsMyjQlVASGwb8bCduGbrAMjssJ4E" />
   </head>
   <body>
-    <img id="logo" src="/images/logo.png" alt="BitBot Labs" title="BitBot Labs" />
+    <header>
+      <h1><a href="http://www.bitbot.co.nz/" title="BitBot Labs">BitBot Labs</a></h1>
+    </header>
+    <section id="content">
+      <ul>
+        <li class="github"><a href="https://github.com/bitbotlabs/" title="GitHub">GitHub</a></li>
+        <li class="twitter"><a href="https://twitter.com/bitbotlabs/" title="Twitter">Twitter</a></li>
+        <li class="email"><a id="email-link" href="mailto:hello[at]bitbot[dot]co[dot]nz" title="Email">Email</a></li>
+      </ul>
+    </section>
     <footer>Copyright 2013 &copy; BitBot Limited</footer>
     <script type="text/javascript">
-
+      window.onload = function() {
+        var email_link = document.getElementById('email-link');
+        email_link.href = email_link.href.replace(/\[at\]/g, '@').replace(/\[dot\]/g, '.');
+      };
+    </script>
+    <script type="text/javascript">
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-39962209-1']);
       _gaq.push(['_trackPageview']);

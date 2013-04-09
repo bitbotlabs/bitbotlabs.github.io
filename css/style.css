@@ -4,11 +4,54 @@ html, body {
   font-family: Helvetica, Arial, sans-serif;
 }
 
-#logo {
+body {
+  background: url(/images/bg.png);
+}
+
+header h1 {
+  margin: 0px;
+}
+
+header h1 a {
+  font-size: 0;
+  color: transparent;
+  background: url(/images/logo.png);
   width: 250px;
   height: 250px;
-  margin: 150px auto;
+  margin: 0 auto;
   display: block;
+}
+
+section#content ul {
+  margin: 100px 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+section#content ul li {
+  display: inline-block; 
+}
+
+section#content ul li a {
+  display: block;
+  width: 64px;
+  height: 64px;
+  font-size: 0;
+  color: transparent;
+  border-radius: 2px;
+}
+
+section#content ul li.twitter a {
+  background: #39a9e0 url(/images/twitter.png);
+}
+
+section#content ul li.github a {
+  background: #4183C4 url(/images/github.png);
+}
+
+section#content ul li.email a {
+  background: #666666 url(/images/email.png);
 }
 
 footer {
