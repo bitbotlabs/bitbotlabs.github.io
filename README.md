@@ -1,2 +1,2 @@
-bitbotlabs.github.io
+bitbotnz.github.io
 ====================
